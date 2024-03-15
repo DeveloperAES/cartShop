@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{
+    min-height: 100vh;
+    background-color:#FBFCFC ;
+    position: relative;
+}
+
+header{
+
+    min-height: 40%;
+ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+/**Carrito**/
+.header-nav{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+.header-nav-icon i{
+    display: inline;
+    font-size: 25px;
+    color: #fff;
+}
+
+
+
+.header-image img{
+    max-width: 100%;
+    height: 100%;
+    border-bottom-left-radius:  25px;
+    border-bottom-right-radius:  25px;
+}
+
+.header-filter{
+    position: relative;
+    bottom: 20px;
+    width: 70%;
+}
+.header-filter input{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    
+}
+.header-filter input::placeholder{
+    color:#AEB6BF  ;
+    position: absolute;
+    left:30px;
+}
+
+.header-filter i{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    color: #AEB6BF;
+    transform: translateY(-50%);
+    
+}
+
+
+/**Contenedor productos**/
+.contenedor-productos{
+   margin-top: 30px;
+   padding-inline: 15px;
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+
+.box-producto{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3ecec;
+    padding: 8px 5px;
+    border-radius: 10px;
+}
+.box-producto-img img{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+.box-producto-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.box-producto-info h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+}
+.box-producto-info p{
+    font-size: .8rem;
+    color: #AEB6BF;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+
+.box-producto-price{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.box-producto-price p{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.box-producto-price .boton-agregar {
+    padding: 5px 5px;
+    background: red;
+    color: white;
+    border-radius: 10px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+
+.nav-footer{
+    width: 100%;
+    background-color: white;
+    padding-block: 15px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+}
+
+.nav-footer-icons{
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-footer-icons i{
+    display: inline;
+    font-size: 25px;
+}
+
+.nav-footer-icons i:hover{
+    color: #F5B041 ;
+}
+
+.bx.bx-home-smile.check{
+    color: #F5B041 ;
+}
+
+
+
+/**Carrito compras**/
+.contenedor-cart{
+    min-height: 50vh;
+    width:350px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    display:none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+
+.cart-nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 15px;
+    padding-block: 10px;
+}
+.cart-nav h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+}
+
+.cart-nav i{
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    color: red;
+    vertical-align: middle;
+}
+.cart-orders-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.contenedor-orders {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cart-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    background-color:#f4fafd ;
+    font-family: "Roboto", sans-serif;
+    padding-block: 5px;
+}
+
+.cart-orders-info {
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+}
+.cart-orders-info .nombre{
+    font-weight: bold;
+    letter-spacing: 1;
+}
+
+.cart-orders-info .price{
+    color:red;
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+.remove-order i {
+    color: red;
+    font-size: 20px;
+}
+
+.orders-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 1rem;
+}
+.orders-details-info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10px;
+    font-family: "Roboto", sans-serif;
+    background-color:#ECF0F1 ;
+    padding-block: 20px;
+    border-radius: 15px;
+}
+
+.buy-order {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.buy-order button{
+    border: none;
+    background-color: red;
+    color: white;
+    width: 80%;
+    padding: 15px 14%;
+    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+  
+
+}

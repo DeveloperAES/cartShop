@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cafetería app</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    
+    <main class="contenedor-principal">
+        <header>
+            <nav class="header-nav">
+                <div class="header-nav-icon">
+                    <i class='bx bxs-shopping-bag' ></i>
+                </div>
+            </nav>
+            <div class="header-image">
+                <img src="./img/bgcafe.jpg" alt="">
+            </div>
+            <div class="header-filter">
+                <input type="search" placeholder="Search...............">
+                <i class='bx bx-search'></i>
+            </div>
+           
+        </header>
+
+
+        <section class="contenedor-productos">
+            <!--Se va a llenar con el JS-->
+
+        </section>
+
+
+      <nav class="nav-footer">
+        <div class="nav-footer-icons">
+            <i class='bx bx-home-smile check'></i>
+            <i class='bx bx-calendar-alt' ></i>
+            <i class='bx bx-edit' ></i>
+            <i class='bx bx-user' ></i>
+        </div>
+      </nav>
+
+      <!--Carrito compras-->
+    <div class="contenedor-cart">
+        <nav class="cart-nav">
+            <h3>My Order</h3>
+            <i id="cerrar" class='bx bx-message-alt-x' ></i>
+        </nav>
+        <!--Div para las orderenes--->
+        <div class="contenedor-orders">
+            <div class="cart-order">
+                <div class="cart-orders-img">
+                    <img src="/img/valentine.webp" alt="">
+                </div>
+                <div class="cart-orders-info">
+                    <p class="nombre">Cofee Late</p>
+                    <p class="price">$2.69</p>
+                </div>
+                <div class="remove-order">
+                    <i class='bx bx-trash' ></i>
+                </div>
+            </div>
+        </div>
+        <!--Espacio para el el total-->
+        <div class="orders-details">
+           <div class="orders-details-info">
+            <p class="total">Total: </p>
+            <p class="amount">$7.65</p>
+           </div>
+            
+           <div class="buy-order">
+            <button>Buy order</button>
+           </div>
+           
+        </div>
+    </div>
+    </main>
+   
+    <script src="./js/app.js"></script>
+    
+</body>
+</html>
